@@ -53,12 +53,12 @@ void RespondToCommand(tflite::ErrorReporter* error_reporter,
     // If we hear a command, light up the appropriate LED
     if (found_command[0] == 'w') {
       last_command_time = current_time;
-      digitalWrite(LEDG, LOW);  // Green for yes
+      digitalWrite(LEDG, LOW);  // Green for wow
     }
 
     if (found_command[0] == 'h') {
       last_command_time = current_time;
-      digitalWrite(LEDR, LOW);  // Red for no
+      digitalWrite(LEDR, LOW);  // Red for happy
     }
 
     if (found_command[0] == 'u') {
